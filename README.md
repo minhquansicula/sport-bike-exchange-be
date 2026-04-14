@@ -35,6 +35,7 @@ Deployment: Render (with custom CORS configurations)
 
 ## Architecture Overview
 
+```
 src/main/java/com/velox/api/
 ├── config/         # Security, CORS, VNPay, and Swagger configurations
 ├── controllers/    # REST API endpoints
@@ -46,7 +47,7 @@ src/main/java/com/velox/api/
 ├── security/       # JWT filters, entry points, and user details service
 ├── services/       # Core business logic and transaction management
 └── utils/          # Helper classes (Hash validation, Date formatters)
-
+```
 
 ## Local Setup & Installation
 
@@ -61,20 +62,21 @@ Maven
 Installation Steps
 
 Clone the repository:
-
+```
 git clone [https://github.com/your-username/velox-backend.git](https://github.com/your-username/velox-backend.git)
 cd velox-backend
-
+```
 
 Database Setup:
+
 Create a new PostgreSQL database named velox_db.
-
+```
 CREATE DATABASE velox_db;
-
+```
 
 Configure Environment Variables:
 Create an application-dev.yml or update application.properties in the src/main/resources folder:
-
+```
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/velox_db
@@ -93,7 +95,7 @@ vnpay:
   hashSecret: your_vnpay_hash_secret
   url: [https://sandbox.vnpayment.vn/paymentv2/vpcpay.html](https://sandbox.vnpayment.vn/paymentv2/vpcpay.html)
   returnUrl: http://localhost:5173/payment/return
-
+```
 
 Build and Run:
 
