@@ -61,20 +61,20 @@ Maven
 
 Installation Steps
 
-Clone the repository:
+1. Clone the repository:
 ```
 git clone [https://github.com/your-username/velox-backend.git](https://github.com/your-username/velox-backend.git)
 cd velox-backend
 ```
 
-Database Setup:
+2. Database Setup:
 
 Create a new PostgreSQL database named velox_db.
 ```
 CREATE DATABASE velox_db;
 ```
 
-Configure Environment Variables:
+3. Configure Environment Variables:
 Create an application-dev.yml or update application.properties in the src/main/resources folder:
 ```
 spring:
@@ -97,62 +97,3 @@ vnpay:
   returnUrl: http://localhost:5173/payment/return
 ```
 
-Build and Run:
-
-mvn clean install
-mvn spring-boot:run
-
-
-The API will be available at http://localhost:8080/api.
-
-## API Endpoints (Brief Overview)
-
-Method
-
-Endpoint
-
-Description
-
-Access Level
-
-POST
-
-/api/auth/login
-
-Authenticate user & return JWT
-
-Public
-
-POST
-
-/api/payments/vnpay/create
-
-Generate VNPay payment URL
-
-Authenticated
-
-GET
-
-/api/payments/vnpay/ipn
-
-Handle VNPay Webhook
-
-Public (VNPay Server)
-
-POST
-
-/api/transactions/deposit
-
-Lock funds for a bike
-
-Buyer
-
-PUT
-
-/api/transactions/{id}/inspect
-
-Update state post-inspection
-
-Inspector
-
-(Detailed documentation available via Swagger UI at /swagger-ui.html upon running the app).
