@@ -51,13 +51,13 @@ src/main/java/com/velox/api/
 
 ## Local Setup & Installation
 
-Prerequisites
+### Prerequisites
 
 Java Development Kit (JDK) 17 or higher
 
 PostgreSQL installed and running locally
 
-Maven
+### Maven
 
 Installation Steps
 
