@@ -1,11 +1,11 @@
-🚴‍♂️ VeloX - Sport Bike Exchange (Backend API)
+# VeloX - Sport Bike Exchange (Backend API)
 
 Welcome to the backend repository for VeloX, a comprehensive C2C marketplace and offline event management platform for sport bicycles. This RESTful API serves as the core engine powering the platform, managing secure transactions, internal wallets, and complex inspection workflows.
 
 Frontend Repository: [Link to Frontend Repo]
 Live API Documentation (Swagger): [Link to Swagger/Postman]
 
-✨ Core Engineering Features
+## Core Engineering Features
 
 Secure Payment Integration: Seamless integration with VNPay Sandbox for e-wallet top-ups and withdrawals, implementing robust IPN (Instant Payment Notification) webhooks and SHA-512 checksum validation to guarantee financial data integrity.
 
@@ -19,7 +19,7 @@ Authentication & Authorization: Implemented robust security using Spring Securit
 
 Robust File Handling: Integrated with Cloudinary API for secure, optimized storage and retrieval of bicycle and inspection images.
 
-🛠 Tech Stack
+## Tech Stack
 
 Framework: Java 17, Spring Boot 3.x
 
@@ -33,7 +33,7 @@ Cloud Storage: Cloudinary
 
 Deployment: Render (with custom CORS configurations)
 
-📂 Architecture Overview
+## Architecture Overview
 
 src/main/java/com/velox/api/
 ├── config/         # Security, CORS, VNPay, and Swagger configurations
@@ -48,7 +48,7 @@ src/main/java/com/velox/api/
 └── utils/          # Helper classes (Hash validation, Date formatters)
 
 
-🚀 Local Setup & Installation
+## Local Setup & Installation
 
 Prerequisites
 
@@ -103,7 +103,7 @@ mvn spring-boot:run
 
 The API will be available at http://localhost:8080/api.
 
-🧪 API Endpoints (Brief Overview)
+## API Endpoints (Brief Overview)
 
 Method
 
